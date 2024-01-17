@@ -1,0 +1,24 @@
+{
+    "mappings": [
+        {
+            "request": {
+                "method": "POST",
+                "urlPath": "/api/test"
+            },
+            "response": {
+                "status": 500,
+                "body": "{\"result\": \"Internal Server Error\"}"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "urlPath": "/api/test"
+            },
+            "response": {
+                "status": 200,
+                "body": "{\"result\": \"Internal Server Error\"}"
+            }
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+    pruebilla-https-fake:
+        image: wiremock/wiremock:3.3.1
+        ports:
+            - "8383:8080"
+        command: --verbose --global-response-templating
+        volumes:
+            - ./wiremock:/home/wiremock
